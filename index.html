@@ -17,42 +17,38 @@
       animation: bgAnim 12s ease-in-out infinite;
     }
     .logo-img {
-      width: 220px;
-      margin-bottom: 28px;
-      opacity: 0.85;
+      width: 440px;
+      max-width: 90vw;
+      margin-bottom: 36px;
     }
     .slogan {
       text-align: center;
-      font-size: 10px;
-      letter-spacing: 0.28em;
-      animation: sloganAnim 12s ease-in-out infinite;
+      font-size: 20px;
+      animation: textAnim 12s ease-in-out infinite;
     }
     .email {
       position: fixed;
       bottom: 32px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 10px;
+      font-size: 20px;
       font-weight: 200;
-      letter-spacing: 0.2em;
-      color: #B5A48A;
       text-decoration: none;
-      transition: color 0.3s;
+      animation: textAnim 12s ease-in-out infinite;
     }
-    .email:hover { color: #8B7355; }
+    .email:hover { opacity: 0.7; }
     @keyframes bgAnim {
       0%   { background: #F2EDE4; }
       33%  { background: #EDE6D8; }
       66%  { background: #F5F0EA; }
       100% { background: #F2EDE4; }
     }
-    @keyframes sloganAnim {
-      0%   { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.28em; }
-      25%  { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.28em; }
-      33%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #8B7355; letter-spacing: 0.15em; }
-      58%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #8B7355; letter-spacing: 0.15em; }
-      66%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #C4A882; letter-spacing: 0.2em;  }
-      91%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #C4A882; letter-spacing: 0.2em;  }
-      100% { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.28em; }
+    @keyframes textAnim {
+      0%   { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.2em;  }
+      25%  { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.2em;  }
+      33%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #8B7355; letter-spacing: 0.12em; }
+      58%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #8B7355; letter-spacing: 0.12em; }
+      66%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #C4A882; letter-spacing: 0.15em; }
+      91%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #C4A882; letter-spacing: 0.15em; }
+      100% { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #B5A48A; letter-spacing: 0.2em;  }
     }
   </style>
 </head>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BRK Labs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200&family=Bebas+Neue&family=Pacifico&family=Space+Mono:ital@1&family=Abril+Fatface&family=Dancing+Script:wght@700&family=Righteous&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -13,22 +13,41 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
+      padding-bottom: 80px;
       animation: bgAnim 12s ease-in-out infinite;
     }
     .logo-img {
+      display: block;
       width: 440px;
       max-width: 90vw;
-      margin-bottom: 36px;
+      margin: 0 auto 36px auto;
     }
     .slogan {
+      position: relative;
+      height: 32px;
+      width: 100%;
       text-align: center;
-      font-size: 17px;
-      animation: sloganAnim 12s ease-in-out infinite;
     }
+    .slogan span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      opacity: 0;
+      filter: blur(10px);
+    }
+    .s1 { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-size: 17px; color: #A0906F; letter-spacing: 0.25em; animation: blurFade 28s ease-in-out infinite 0s;   }
+    .s2 { font-family: 'Bebas Neue', sans-serif;  font-size: 23px;  color: #6B5240; letter-spacing: 0.18em; animation: blurFade 28s ease-in-out infinite -4s;  }
+    .s3 { font-family: 'Pacifico', cursive;        font-size: 15px;  color: #8B7355; letter-spacing: 0.05em; animation: blurFade 28s ease-in-out infinite -8s;  }
+    .s4 { font-family: 'Space Mono', monospace;    font-style: italic; font-size: 13px; color: #9C8A6E; letter-spacing: 0.08em; animation: blurFade 28s ease-in-out infinite -12s; }
+    .s5 { font-family: 'Abril Fatface', serif;     font-size: 18px;  color: #7A6548; letter-spacing: 0.1em;  animation: blurFade 28s ease-in-out infinite -16s; }
+    .s6 { font-family: 'Dancing Script', cursive;  font-weight: 700; font-size: 18px; color: #B5A48A; letter-spacing: 0.05em; animation: blurFade 28s ease-in-out infinite -20s; }
+    .s7 { font-family: 'Righteous', sans-serif;    font-size: 17px;  color: #5C4A36; letter-spacing: 0.15em; animation: blurFade 28s ease-in-out infinite -24s; }
     .email {
       position: fixed;
       bottom: 32px;
+      left: 0; right: 0;
+      text-align: center;
       font-family: 'DM Sans', sans-serif;
       font-size: 17px;
       font-weight: 200;
@@ -44,21 +63,27 @@
       66%  { background: #E4D9C8; }
       100% { background: #E8DFD0; }
     }
-    @keyframes sloganAnim {
-      0%   { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #8B7355; letter-spacing: 0.2em;  }
-      25%  { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #8B7355; letter-spacing: 0.2em;  }
-      33%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #6B5240; letter-spacing: 0.12em; }
-      58%  { font-family: 'Lora', serif;             font-weight: 400; font-style: italic; color: #6B5240; letter-spacing: 0.12em; }
-      66%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #A0845C; letter-spacing: 0.15em; }
-      91%  { font-family: 'Playfair Display', serif; font-weight: 400; font-style: normal; color: #A0845C; letter-spacing: 0.15em; }
-      100% { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-style: normal; color: #8B7355; letter-spacing: 0.2em;  }
+    @keyframes blurFade {
+      0%   { opacity: 0; filter: blur(12px); }
+      5%   { opacity: 1; filter: blur(0px);  }
+      9%   { opacity: 1; filter: blur(0px);  }
+      14%  { opacity: 0; filter: blur(12px); }
+      100% { opacity: 0; filter: blur(12px); }
     }
   </style>
 </head>
 <body>
   <div style="text-align:center;">
     <img class="logo-img" src="logo.png" alt="BRK Labs">
-    <div class="slogan">Break Rules. Build Brands.</div>
+    <div class="slogan">
+      <span class="s1">Break Rules. Build Brands.</span>
+      <span class="s2">Break Rules. Build Brands.</span>
+      <span class="s3">Break Rules. Build Brands.</span>
+      <span class="s4">Break Rules. Build Brands.</span>
+      <span class="s5">Break Rules. Build Brands.</span>
+      <span class="s6">Break Rules. Build Brands.</span>
+      <span class="s7">Break Rules. Build Brands.</span>
+    </div>
   </div>
   <a class="email" href="mailto:hi@brklabs.com">hi@brklabs.com</a>
 </body>

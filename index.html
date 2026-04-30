@@ -22,27 +22,20 @@
       max-width: 90vw;
       margin: 0 auto 36px auto;
     }
-    .slogan {
-      position: relative;
-      height: 32px;
-      width: 100%;
-      text-align: center;
-    }
     .slogan span {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       white-space: nowrap;
       opacity: 0;
-      filter: blur(10px);
     }
-    .s1 { font-family: 'DM Sans', sans-serif;     font-weight: 200; font-size: 17px; color: #A0906F; letter-spacing: 0.25em; animation: blurFade 28s ease-in-out infinite 0s;   }
-    .s2 { font-family: 'Bebas Neue', sans-serif;  font-size: 23px;  color: #6B5240; letter-spacing: 0.18em; animation: blurFade 28s ease-in-out infinite -4s;  }
-    .s3 { font-family: 'Pacifico', cursive;        font-size: 15px;  color: #8B7355; letter-spacing: 0.05em; animation: blurFade 28s ease-in-out infinite -8s;  }
-    .s4 { font-family: 'Space Mono', monospace;    font-style: italic; font-size: 13px; color: #9C8A6E; letter-spacing: 0.08em; animation: blurFade 28s ease-in-out infinite -12s; }
-    .s5 { font-family: 'Abril Fatface', serif;     font-size: 18px;  color: #7A6548; letter-spacing: 0.1em;  animation: blurFade 28s ease-in-out infinite -16s; }
-    .s6 { font-family: 'Dancing Script', cursive;  font-weight: 700; font-size: 18px; color: #B5A48A; letter-spacing: 0.05em; animation: blurFade 28s ease-in-out infinite -20s; }
-    .s7 { font-family: 'Righteous', sans-serif;    font-size: 17px;  color: #5C4A36; letter-spacing: 0.15em; animation: blurFade 28s ease-in-out infinite -24s; }
+    .s1 { font-family: 'Playfair Display', serif;   font-weight: 400; font-size: 22px; color: #6B5240; letter-spacing: 0.12em; animation: fadeInOut 49s ease-in-out infinite 0s;   }
+    .s2 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 24px; color: #8B7355; letter-spacing: 0.08em; animation: fadeInOut 49s ease-in-out infinite -7s;  }
+    .s3 { font-family: 'Italiana', serif;            font-size: 24px; color: #7A6548; letter-spacing: 0.32em; animation: fadeInOut 49s ease-in-out infinite -14s; }
+    .s4 { font-family: 'Cinzel', serif;              font-weight: 400; font-size: 17px; color: #5C4A36; letter-spacing: 0.36em; animation: fadeInOut 49s ease-in-out infinite -21s; }
+    .s5 { font-family: 'Bodoni Moda', serif;         font-style: italic; font-weight: 400; font-size: 21px; color: #9C8A6E; letter-spacing: 0.06em; animation: fadeInOut 49s ease-in-out infinite -28s; }
+    .s6 { font-family: 'Marcellus', serif;           font-size: 21px; color: #A0906F; letter-spacing: 0.22em; animation: fadeInOut 49s ease-in-out infinite -35s; }
+    .s7 { font-family: 'Tenor Sans', sans-serif;     font-size: 18px; color: #B5A48A; letter-spacing: 0.4em;  animation: fadeInOut 49s ease-in-out infinite -42s; }
     .email {
       position: fixed;
       bottom: 32px;
@@ -63,12 +56,12 @@
       66%  { background: #E4D9C8; }
       100% { background: #E8DFD0; }
     }
-    @keyframes blurFade {
-      0%   { opacity: 0; filter: blur(12px); }
-      5%   { opacity: 1; filter: blur(0px);  }
-      9%   { opacity: 1; filter: blur(0px);  }
-      14%  { opacity: 0; filter: blur(12px); }
-      100% { opacity: 0; filter: blur(12px); }
+    @keyframes fadeInOut {
+      0%   { opacity: 0; }
+      4%   { opacity: 1; }
+      11%  { opacity: 1; }
+      15%  { opacity: 0; }
+      100% { opacity: 0; }
     }
   </style>
 </head>

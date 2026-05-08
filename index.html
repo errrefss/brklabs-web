@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <title>BRK Labs</title>
   <meta name="description" content="Break Rules. Build Brands.">
-
-  <!-- Open Graph / Facebook / LinkedIn / KakaoTalk -->
+  
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BRK Labs">
   <meta property="og:title" content="BRK Labs">
@@ -20,15 +19,13 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="BRK Labs — Break Rules. Build Brands.">
   <meta property="og:locale" content="en_US">
-
-  <!-- Twitter / X -->
+  
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BRK Labs">
   <meta name="twitter:description" content="Break Rules. Build Brands.">
   <meta name="twitter:image" content="https://brklabs.com/og-image.png">
   <meta name="twitter:image:alt" content="BRK Labs — Break Rules. Build Brands.">
-
-  <!-- Favicons -->
+  
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,80 +33,79 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#E8DFD0">
-
-  <!-- Canonical URL -->
+  
   <link rel="canonical" href="https://brklabs.com/">
-
-  <!-- Fonts -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond:ital,wght@1,300&family=Italiana&family=Cinzel&family=Bodoni+Moda:ital@1&family=Marcellus&family=Tenor+Sans&family=DM+Sans:wght@200&display=swap" rel="stylesheet">
-
+  
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 80px;
-      animation: bgAnim 12s ease-in-out infinite;
-    }
-    .logo-img {
-      display: block;
-      width: 440px;
-      height: auto;
-      max-width: 90vw;
-      margin: 0 auto 36px auto;
-    }
-    .slogan {
-      position: relative;
-      height: 40px;
-      width: 100%;
-    }
-    .slogan span {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
-      opacity: 0;
-    }
-    .s1 { font-family: 'Playfair Display', serif;   font-weight: 400; font-size: 22px; color: #6B5240; letter-spacing: 0.12em; animation: fadeInOut 49s linear infinite 0s;   }
-    .s2 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 24px; color: #8B7355; letter-spacing: 0.08em; animation: fadeInOut 49s linear infinite -7s;  }
-    .s3 { font-family: 'Italiana', serif;            font-size: 24px; color: #7A6548; letter-spacing: 0.32em; animation: fadeInOut 49s linear infinite -14s; }
-    .s4 { font-family: 'Cinzel', serif;              font-weight: 400; font-size: 17px; color: #5C4A36; letter-spacing: 0.36em; animation: fadeInOut 49s linear infinite -21s; }
-    .s5 { font-family: 'Bodoni Moda', serif;         font-style: italic; font-weight: 400; font-size: 21px; color: #9C8A6E; letter-spacing: 0.06em; animation: fadeInOut 49s linear infinite -28s; }
-    .s6 { font-family: 'Marcellus', serif;           font-size: 21px; color: #A0906F; letter-spacing: 0.22em; animation: fadeInOut 49s linear infinite -35s; }
-    .s7 { font-family: 'Tenor Sans', sans-serif;     font-size: 18px; color: #B5A48A; letter-spacing: 0.4em;  animation: fadeInOut 49s linear infinite -42s; }
-    .email {
-      position: fixed;
-      bottom: 32px;
-      left: 0; right: 0;
-      text-align: center;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 17px;
-      font-weight: 200;
-      letter-spacing: 0.2em;
-      color: #8B7355;
-      text-decoration: none;
-      transition: opacity 0.3s;
-    }
-    .email:hover { opacity: 0.6; }
-    @keyframes bgAnim {
-      0%   { background: #E8DFD0; }
-      33%  { background: #D9CCBA; }
-      66%  { background: #E4D9C8; }
-      100% { background: #E8DFD0; }
-    }
-    @keyframes fadeInOut {
-      0%      { opacity: 0; }
-      2.04%   { opacity: 1; }
-      14.28%  { opacity: 1; }
-      16.33%  { opacity: 0; }
-      100%    { opacity: 0; }
-    }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    animation: bgAnim 12s ease-in-out infinite;
+  }
+  .logo-img {
+    display: block;
+    width: 440px;
+    height: auto;
+    max-width: 90vw;
+    margin: 0 auto 72px auto; /* 로고와 슬로건 간격 확대 */
+  }
+  .slogan {
+    position: relative;
+    height: 40px;
+    width: 100%;
+  }
+  .slogan span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    opacity: 0;
+  }
+  /* 텍스트 색상을 더 옅고 부드러운 톤으로 수정 */
+  .s1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 22px; color: #9A8373; letter-spacing: 0.12em; animation: fadeInOut 49s linear infinite 0s; }
+  .s2 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 24px; color: #B19E86; letter-spacing: 0.08em; animation: fadeInOut 49s linear infinite -7s; }
+  .s3 { font-family: 'Italiana', serif; font-size: 24px; color: #A4937C; letter-spacing: 0.32em; animation: fadeInOut 49s linear infinite -14s; }
+  .s4 { font-family: 'Cinzel', serif; font-weight: 400; font-size: 17px; color: #8E8071; letter-spacing: 0.36em; animation: fadeInOut 49s linear infinite -21s; }
+  .s5 { font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 400; font-size: 21px; color: #BCAF9C; letter-spacing: 0.06em; animation: fadeInOut 49s linear infinite -28s; }
+  .s6 { font-family: 'Marcellus', serif; font-size: 21px; color: #BFB298; letter-spacing: 0.22em; animation: fadeInOut 49s linear infinite -35s; }
+  .s7 { font-family: 'Tenor Sans', sans-serif; font-size: 18px; color: #C8BCA6; letter-spacing: 0.4em; animation: fadeInOut 49s linear infinite -42s; }
+  .email {
+    position: fixed;
+    bottom: 32px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    color: #8B7355;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  .email:hover { opacity: 0.6; }
+  @keyframes bgAnim {
+    0% { background: #E8DFD0; }
+    33% { background: #D9CCBA; }
+    66% { background: #E4D9C8; }
+    100% { background: #E8DFD0; }
+  }
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    2.04% { opacity: 1; }
+    14.28% { opacity: 1; }
+    16.33% { opacity: 0; }
+    100% { opacity: 0; }
+  }
   </style>
 </head>
 <body>

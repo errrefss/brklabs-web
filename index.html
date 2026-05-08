@@ -3,8 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>BRK Labs</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200&family=Bebas+Neue&family=Pacifico&family=Space+Mono:ital@1&family=Abril+Fatface&family=Dancing+Script:wght@700&family=Righteous&display=swap" rel="stylesheet">
+  <meta name="description" content="Break Rules. Build Brands.">
+
+  <!-- Open Graph / Facebook / LinkedIn / KakaoTalk -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BRK Labs">
+  <meta property="og:title" content="BRK Labs">
+  <meta property="og:description" content="Break Rules. Build Brands.">
+  <meta property="og:url" content="https://brklabs.com/">
+  <meta property="og:image" content="https://brklabs.com/og-image.png">
+  <meta property="og:image:secure_url" content="https://brklabs.com/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BRK Labs — Break Rules. Build Brands.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BRK Labs">
+  <meta name="twitter:description" content="Break Rules. Build Brands.">
+  <meta name="twitter:image" content="https://brklabs.com/og-image.png">
+  <meta name="twitter:image:alt" content="BRK Labs — Break Rules. Build Brands.">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#E8DFD0">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://brklabs.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond:ital,wght@1,300&family=Italiana&family=Cinzel&family=Bodoni+Moda:ital@1&family=Marcellus&family=Tenor+Sans&family=DM+Sans:wght@200&display=swap" rel="stylesheet">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -19,23 +59,30 @@
     .logo-img {
       display: block;
       width: 440px;
+      height: auto;
       max-width: 90vw;
       margin: 0 auto 36px auto;
+    }
+    .slogan {
+      position: relative;
+      height: 40px;
+      width: 100%;
     }
     .slogan span {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
       white-space: nowrap;
       opacity: 0;
     }
-    .s1 { font-family: 'Playfair Display', serif;   font-weight: 400; font-size: 22px; color: #6B5240; letter-spacing: 0.12em; animation: fadeInOut 49s ease-in-out infinite 0s;   }
-    .s2 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 24px; color: #8B7355; letter-spacing: 0.08em; animation: fadeInOut 49s ease-in-out infinite -7s;  }
-    .s3 { font-family: 'Italiana', serif;            font-size: 24px; color: #7A6548; letter-spacing: 0.32em; animation: fadeInOut 49s ease-in-out infinite -14s; }
-    .s4 { font-family: 'Cinzel', serif;              font-weight: 400; font-size: 17px; color: #5C4A36; letter-spacing: 0.36em; animation: fadeInOut 49s ease-in-out infinite -21s; }
-    .s5 { font-family: 'Bodoni Moda', serif;         font-style: italic; font-weight: 400; font-size: 21px; color: #9C8A6E; letter-spacing: 0.06em; animation: fadeInOut 49s ease-in-out infinite -28s; }
-    .s6 { font-family: 'Marcellus', serif;           font-size: 21px; color: #A0906F; letter-spacing: 0.22em; animation: fadeInOut 49s ease-in-out infinite -35s; }
-    .s7 { font-family: 'Tenor Sans', sans-serif;     font-size: 18px; color: #B5A48A; letter-spacing: 0.4em;  animation: fadeInOut 49s ease-in-out infinite -42s; }
+    .s1 { font-family: 'Playfair Display', serif;   font-weight: 400; font-size: 22px; color: #6B5240; letter-spacing: 0.12em; animation: fadeInOut 49s linear infinite 0s;   }
+    .s2 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 24px; color: #8B7355; letter-spacing: 0.08em; animation: fadeInOut 49s linear infinite -7s;  }
+    .s3 { font-family: 'Italiana', serif;            font-size: 24px; color: #7A6548; letter-spacing: 0.32em; animation: fadeInOut 49s linear infinite -14s; }
+    .s4 { font-family: 'Cinzel', serif;              font-weight: 400; font-size: 17px; color: #5C4A36; letter-spacing: 0.36em; animation: fadeInOut 49s linear infinite -21s; }
+    .s5 { font-family: 'Bodoni Moda', serif;         font-style: italic; font-weight: 400; font-size: 21px; color: #9C8A6E; letter-spacing: 0.06em; animation: fadeInOut 49s linear infinite -28s; }
+    .s6 { font-family: 'Marcellus', serif;           font-size: 21px; color: #A0906F; letter-spacing: 0.22em; animation: fadeInOut 49s linear infinite -35s; }
+    .s7 { font-family: 'Tenor Sans', sans-serif;     font-size: 18px; color: #B5A48A; letter-spacing: 0.4em;  animation: fadeInOut 49s linear infinite -42s; }
     .email {
       position: fixed;
       bottom: 32px;
@@ -57,25 +104,25 @@
       100% { background: #E8DFD0; }
     }
     @keyframes fadeInOut {
-      0%   { opacity: 0; }
-      4%   { opacity: 1; }
-      11%  { opacity: 1; }
-      15%  { opacity: 0; }
-      100% { opacity: 0; }
+      0%      { opacity: 0; }
+      2.04%   { opacity: 1; }
+      14.28%  { opacity: 1; }
+      16.33%  { opacity: 0; }
+      100%    { opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <div style="text-align:center;">
-    <img class="logo-img" src="logo.png" alt="BRK Labs">
+  <div style="text-align:center; width: 100%;">
+    <img class="logo-img" src="logo.png" alt="BRK Labs" width="440" height="260">
     <div class="slogan">
       <span class="s1">Break Rules. Build Brands.</span>
-      <span class="s2">Break Rules. Build Brands.</span>
-      <span class="s3">Break Rules. Build Brands.</span>
-      <span class="s4">Break Rules. Build Brands.</span>
-      <span class="s5">Break Rules. Build Brands.</span>
-      <span class="s6">Break Rules. Build Brands.</span>
-      <span class="s7">Break Rules. Build Brands.</span>
+      <span class="s2" aria-hidden="true">Break Rules. Build Brands.</span>
+      <span class="s3" aria-hidden="true">Break Rules. Build Brands.</span>
+      <span class="s4" aria-hidden="true">Break Rules. Build Brands.</span>
+      <span class="s5" aria-hidden="true">Break Rules. Build Brands.</span>
+      <span class="s6" aria-hidden="true">Break Rules. Build Brands.</span>
+      <span class="s7" aria-hidden="true">Break Rules. Build Brands.</span>
     </div>
   </div>
   <a class="email" href="mailto:hi@brklabs.com">hi@brklabs.com</a>

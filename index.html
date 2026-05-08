@@ -106,6 +106,22 @@
     16.33% { opacity: 0; }
     100% { opacity: 0; }
   }
+    /* 모바일 최적화 (화면 너비가 480px 이하일 때 적용) */
+@media (max-width: 480px) {
+  .logo-img {
+    width: 280px; /* 로고 크기도 모바일에 맞게 축소 */
+    margin-bottom: 40px; /* 로고와 슬로건 간격도 약간 조정 */
+  }
+
+  .slogan span {
+    font-size: 14px !important; /* 글자 크기 축소 */
+    letter-spacing: 0.1em !important; /* 자간을 좁혀서 한 줄에 들어오게 함 */
+  }
+
+  /* 각 폰트별로 미세 조정이 필요하다면 아래처럼 추가 가능 */
+  .s3 { letter-spacing: 0.15em !important; } /* Italiana처럼 자간이 매우 넓은 경우 */
+  .s7 { letter-spacing: 0.2em !important; }  /* Tenor Sans 자간 조정 */
+}
   </style>
 </head>
 <body>
